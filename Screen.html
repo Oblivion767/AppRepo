@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "Screen">
+<head>
+     <h1> New Game
+    <p></p>
+    <title>screen</title>
+    <link rel="stylesheet" href="compactIssue.css">
+<script src="JQuery.js">
+</script>
+    <script src="tableSearch.js"> 
+ 	 </script> 
+    <script src="command.js"> 
+ 	 </script> 
+    <script src="mathQuestionGenerator.js"> 
+ 	 </script> 
+
+<a href="return" onclick="window.open('Menu.html')"> 
+Quit</a>
+	<div id='batBlog'>
+
+			<img src="batFly.bmp" alt="bat" id='bat' onload="command.timingForBat('batBlog',40,19);">
+
+	</div>
+	
+	<script>
+	
+	
+
+	
+	</script>
+	
+	
+</head>
+<br>
+
+
+
+
+
+
+ 
+<body>
+
+
+	<div id='questionBlog' style='width:300px;height:300px;'>
+
+			<script>
+
+			for(var i=0;i<enemyNumber;i++)
+			{
+				var tempImage = new Image();
+				tempImage.src = enemyPosition[i].enemyImage();
+				
+				
+				
+				var smile = 0;
+				
+				var monsterImage=$('<img src="'+ tempImage.src+ '" class="monster" alt=\"Monster Image\" width=\"65%\" height=\"65%\" id=\"smile'+ i+'\">');
+			//monsterImage.css("top","0px");//450 is the height length
+			//monsterImage.css("left","100px");
+			//monsterImage.appendTo("#questionBlog");
+			
+			
+					
+					var tempAim = "'aim'";
+					
+					
+					var aimButton=$('<input type="button" value="AIM" id="aim'+i+'" data-target="'+ i + '" disabled="true" ">').click(function (aimEvent) 
+					{command.throwAction('aim'); aa = $(aimEvent.target).attr('data-target'); target = parseInt(aa);});
+				
+				var imageDiv=$('<div id="image'+i+'" style="width:50px;height:50px;">').append(monsterImage).append(aimButton).appendTo("#questionBlog");
+				
+				//imageDiv.css("top","0px");//450 is the height length
+				//imageDiv.css("left","100px");
+				
+				$("#"+'image'+i).css('position','absolute');
+				$("#"+'image'+i).css("left",enemyPosition[i].enemyX());
+				$("#"+'image'+i).css("top",(6-enemyPosition[i].enemyDistance())*30);
+			
+
+			
+			}
+			
+			
+		
+			</script>
+
+	</div>
+
+	
+
+	<div id = 'questionBlog2'>
+	<script>
+	
+	</script>
+	
+	</div>
+	
+
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<div id='boyBlog'>
+	###########
+	<img src="boyBack.png" style="float:middle" alt="Boy" width="50" height="50" id='boy' >
+	###########
+		
+	</div>
+	<img src="land.png" alt="Boy" id='boy' >
+	<br>
+	<table>
+		<p id ='question'>Question</p>
+			   <tbody>
+				
+					<tr>
+						<td>
+							Answer<input type="text" size="10" maxlength="10" value="" id="mathAnswer"  />
+							<input type="button" disabled="true" value="THROW" id="throwButton" onclick="
+							matchNumber();
+							
+							" />
+						</td>
+					</tr>
+				<p id='countdown' value='50'></p>
+				</tbody>
+
+	</table>
+	  
+		
+	<table>
+	 
+
+
+		   <tbody>
+
+				<tr>
+					<td>
+						Remainder<input type="text" size="10" maxlength="10" value="" id="mathAnswer2"  />
+						<br>
+					</td>
+				</tr>
+		
+			</tbody>
+
+		</table>
+<script>
+$("#mathAnswer2").css("visibility","hidden");
+</script>
+
+</body>
+
+
+
+
+</html>

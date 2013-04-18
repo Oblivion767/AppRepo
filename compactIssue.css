@@ -1,0 +1,32 @@
+body {
+    font-family: Impact;
+    font-size: 14px;
+    background-color: black;
+    position:absolute; top:40; left:40;
+background-image:url("Halloween-Haunted-House.jpeg");
+}
+
+td {
+    font-family: Impact;
+    font-size: 14px;color:#00ff00;
+}
+th {
+    font-family: Impact;
+    font-size: 14px;
+    background - color: #F0FFFF;
+}
+input {
+    font-family: Impact;
+    font-size: 14px;
+}
+a:link {
+    font-family: Impact;
+    font-size: 14px;color:blue;
+}
+h1 {color:#00ff00;}
+h2 {color:#00ff00;}
+
+
+
+#questionBlog{position:absolute; }
+#batBlog{position:absolute; }

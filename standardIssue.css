@@ -1,0 +1,27 @@
+body {
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    font-size: 21px;
+    background-color: black;
+}
+
+td {
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    font-size: 21px;color:#00ff00;
+}
+th {
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    font-size: 21px;
+    background - color: #F0FFFF;
+}
+input {
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    font-size: 20px;color:red;
+
+}
+
+a:link {
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    font-size: 20px;color:orange;
+}
+h1 {color:#00ff00;}
+h2 {color:#00ff00;}
